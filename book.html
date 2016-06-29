@@ -19,7 +19,7 @@
 			}
 			.m-read-content{
 			    font-size:20px;
-			    color:#555;
+			    /*color:#555;*/
 			    line-height:31px;
 			    padding:15px;
 			}
@@ -85,6 +85,9 @@
 			    left:42px;
 			    color:#d5d5d6;
 			}
+			.nav-title a{
+				color:#d5d5d6;
+			}
 			.down-nav{
 			    position:fixed;
 			    bottom:0;
@@ -149,7 +152,7 @@
 			    line-height:23px;
 			    width:100%;
 			}
-			.down-nav .night-type{
+			.down-nav .day-type{
 			    display:none;
 			}
 			.nav-pannel-bk{
@@ -168,7 +171,7 @@
 			    width:100%;
 			    background:none;
 			    color:#fff;
-			    z-index:10001;
+			    z-index:10003;
 			}
 			.child-mod{
 			    padding:5px 10px;
@@ -199,6 +202,21 @@
 			    vertical-align:-10px;
 			    margin-right:2%;
 			}
+			.bk-container:nth-child(2){
+			    background:#F7EEE5;
+			}
+			.bk-container:nth-child(3){
+			    background:#E9DFC7;
+			}
+			.bk-container:nth-child(4){
+			    background:#A4A4A4;
+			}
+			.bk-container:nth-child(5){
+			    background:#CDEFCE;
+			}
+			.bk-container:nth-child(6){
+			    background:#283548;
+			}
 			.bk-container-current{
 			    position:absolute;
 			    display:inline-block;
@@ -225,22 +243,11 @@
 		    </div>
 		    <div id="top-nav" class="top-nav" style="display:none">
 		        <div class="icon-back"></div>
-		        <div class="nav-title">返回书架</div>
+		        <div class="nav-title"><a href="index.html">返回书架</a></div>
 		    </div>
 		    <div id="fiction_chapter_title"></div>
 		    <div id="fiction_container" class="m-read-content">
-		        <h4>能得七皇子青眼</h4>
-		        <p>
-		            as劳动纠纷阿动纠纷阿斯蒂芬啊四季度房价啊三等奖菲拉斯京东阿斯蒂芬阿萨德发动机打算家乐福阿斯科利的发卡数量的方暗室逢灯，啊三等奖发啊送到附近阿萨德方阿斯科利的发 啊送到附近了；垃圾的时间放假阿联就刻录机啊；阿拉斯加地方斯蒂芬姐啊司法局阿斯兰。
-		            阿斯蒂芬。as劳动纠纷阿斯蒂芬啊四季度房价啊三等奖菲拉斯京东阿斯蒂芬阿萨德发动机打算家乐福阿斯科利的发卡数量的方暗室逢灯，啊三等奖发啊送到附近阿萨德方阿斯科利的发 啊送到附近了；垃圾的时间放假阿联就刻录机啊；阿拉斯加地方斯蒂芬姐啊司法局阿斯兰。
-		            阿斯蒂芬。
-		        </p>
-		        <p>
-		            as劳动纠纷阿斯蒂芬啊四季度房价啊三等奖菲拉斯京东阿斯蒂芬阿萨德发动机打算家乐福阿斯科利的发卡数量的方暗室逢灯，啊三等奖发啊送到附近阿萨德方阿斯科利的发 啊送到附近了；垃圾的时间放假阿联就刻录机啊；阿拉斯加地方斯蒂芬姐啊司法局阿斯兰。
-		            阿斯蒂芬。as纠纷阿斯蒂芬啊四季度房价啊三等奖菲拉斯京东阿斯蒂芬阿萨德发动机打算家乐福阿斯科利的发卡数量的方暗室逢灯，啊三等奖发啊送到附近阿萨德方阿斯科利的发 啊送到附近了；垃圾的时间放假阿联就刻录机啊；阿拉斯加地方斯蒂芬姐啊司法局阿斯兰。
-		            阿斯蒂芬。as劳动纠纷阿斯蒂芬啊四季度房价啊三等奖菲拉斯京东阿斯蒂芬阿萨德发动机打算家乐福阿斯科利的发卡数量的方暗室逢灯，啊三等奖发啊送到附近阿萨德方阿斯科利的发 啊送到附近了；垃圾的时间放假阿联就刻录机啊；阿拉斯加地方斯蒂芬姐啊司法局阿斯兰。
-		            阿斯蒂芬。
-		        </p>
+		        
 		    </div>
 		    <div class="m-button-bar">
 		        <ul class="u-tab">
@@ -281,23 +288,15 @@
 		            <button id="large-font" class="font-size-button">大</button>
 		            <button id="small-font" class="font-size-button">小</button>
 		        </div>
-		        <div class="child-mod">
+		        <div class="child-mod" id="child-mod">
 		            <span>背景</span>
+		            <div class="bk-container"></div>
 		            <div class="bk-container">
 		                <div class="bk-container-current"></div>
 		            </div>
-		            <div class="bk-container">
-		                <div class="bk-container-current"></div>
-		            </div>
-		            <div class="bk-container">
-		                <div class="bk-container-current"></div>
-		            </div>
-		            <div class="bk-container">
-		                <div class="bk-container-current"></div>
-		            </div>
-		            <div class="bk-container">
-		                <div class="bk-container-current"></div>
-		            </div>
+		            <div class="bk-container"></div>
+		            <div class="bk-container"></div>
+		            <div class="bk-container"></div>
 		        </div>
 		    </div>
 		</div>
@@ -309,6 +308,7 @@
 		<script src="js/jquery.jsonp.js"></script>
 		<script>
 			(function(){
+			    'use strict';
 			    var Util = (function(){
 			        var prefix = 'html5_reader_';
 			        var StorageGetter = function(key){
@@ -317,7 +317,20 @@
 			        var StorageSetter = function(key,val){
 			            return localStorage.setItem(prefix + key,val);
 			        };
+			        var getJSONP = function(url,callback){
+			            return $.jsonp({
+			                url:url,
+			                cache:true,
+			                callback:'duokan_fiction_chapter',
+			                success:function(result){
+			                    var data = $.base64.decode(result);
+			                    var json = decodeURIComponent(escape(data));
+			                    callback(json);
+			                }
+			            });
+			        };
 			        return {
+			            getJSONP:getJSONP,
 			            StorageGetter:StorageGetter,
 			            StorageSetter:StorageSetter
 			        }
@@ -330,27 +343,161 @@
 			    };
 			    var Win = $(window);
 			    var Doc = $(document);
+			    var Body = $(document.body);
+			    var readerModel,readerUI;
+			    //字体大小
 			    var RootContainer = $('#fiction_container');
 			    var initFontSize = Util.StorageGetter('font_size');
 			    initFontSize = parseInt(initFontSize);
 			    if(!initFontSize){
-			        initFontSize = 18;
+			        initFontSize = 20;
 			    }
 			    RootContainer.css('font-size',initFontSize);
+			    //改变背景色
+			    var bkColor = Util.StorageGetter('background_color');
+			    if(!bkColor){
+			        bkColor = '#e9dfc7';
+			    }
+			    Body.css('background-color',bkColor);
+			    //默认昼夜模式
+			    var oType = Util.StorageGetter('type');
+			    if(oType=='night-type'){
+			        Body.css({
+			            'background-color':'#0F1410',
+			            'color':'#363B37'
+			        });
+			        $('.day-type').show();
+			        $('.night-type').hide();
+			    }
 			    
-			    
+			    var bkDivs = $('#child-mod>div');
+			    var oIndex = Util.StorageGetter('index');
+			    if(oIndex){
+			        bkDivs.each(function(){
+			            $(this).children().remove();
+			        });
+			        bkDivs.eq(oIndex).append('<div class="bk-container-current"></div>');
+			    }
 			    function main(){
 			        //todo 入口函数 
+			        readerModel = ReaderModel();
+			        readerUI = ReaderBaseFrame(RootContainer);
+			        readerModel.init(function(data){
+			            readerUI(data);
+			        });
 			        EventHanlder();
 			    }
 			    
-			    function ReaderMode(){
+			    function ReaderModel(){
 			        //todo 实现数据交互
+			        var Chapter_id;
+			        var ChapterTotal;
+			        var init = function(UIcallback){
+			            getFictionInfo(function(){
+			                getCurChapterContent(Chapter_id,function(data){
+			                    UIcallback && UIcallback(data);
+			                });
+			            });
+			         //   getFictionInfoPromise().then(function(d){
+			         //       return getCurChapterContentPromise();
+			         //   }).then(function(data){
+			         //       UIcallback && UIcallback(data);
+			         //   });
+			        };
+			        var getFictionInfo = function(callback){
+			              $.get('data/chapter.json',function(data){
+			                  if(Util.StorageGetter('Chapter_id')){
+			                      Chapter_id = Util.StorageGetter('Chapter_id');
+			                  }else{
+			                      Chapter_id = data.chapters[1].chapter_id;
+			                  }
+			                  ChapterTotal = data.chapters.length;
+			                  callback && callback();
+			              },'json');
+			        };
 			        
+			        var getFictionInfoPromise = function(){
+			            return new Promise(function(resolve,reject){
+    			            $.get('data/chapter.json',function(data){
+    			                  if(data.result == 0){
+    			                        if(Util.StorageGetter('Chapter_id')){
+    			                            Chapter_id = Util.StorageGetter('Chapter_id');
+    			                        }else{
+    			                            Chapter_id = data.chapters[1].chapter_id;
+    			                        }
+    			                        ChapterTotal = data.chapters.length;
+    			                        resolve();
+    			                  } else {
+    			                        reject();
+    			                  }
+    			              },'json');
+			            });
+			        };
+			        
+			        
+			        var getCurChapterContent = function(chapter_id,callback){
+			            $.get('data/data'+chapter_id+'.json',function(data){
+			                if(data.result == 0){
+			                    var url = data.jsonp;
+			                    Util.getJSONP(url,function(data){
+			                        callback && callback(data);
+			                    });
+			                }
+			            },'json');
+			        };
+			        var getCurChapterContentPromise = function(){
+			            return new Promise(function(resolve,reject){
+    			            $.get('data/data'+Chapter_id+'.json',function(data){
+    			                if(data.result == 0){
+    			                    var url = data.jsonp;
+    			                    Util.getJSONP(url,function(data){
+    			                     //   callback && callback(data);
+    			                     resolve(data);
+    			                    });
+    			                }else{
+    			                    reject({msg:'fail'});
+    			                }
+    			            },'json');
+			            });
+			        };
+			        var prevChapter = function(UIcallback){
+			            Chapter_id = parseInt(Chapter_id,10);
+			            if(Chapter_id == 0){
+			                return;
+			            }
+			            Chapter_id -= 1;
+			            Util.StorageSetter('Chapter_id',Chapter_id);
+			            getCurChapterContent(Chapter_id,UIcallback);
+			        };
+			        var nextChapter = function(UIcallback){
+			            Chapter_id = parseInt(Chapter_id,10);
+			            if(Chapter_id == ChapterTotal){
+			                return;
+			            }
+			            Chapter_id += 1;
+			            Util.StorageSetter('Chapter_id',Chapter_id);
+			            getCurChapterContent(Chapter_id,UIcallback);
+			        };
+			        return {
+			            init:init,
+			            prevChapter:prevChapter,
+			            nextChapter:nextChapter
+			        };
 			    }
 			    
-			    function ReaderBaseFrame(){
+			    function ReaderBaseFrame(container){
 			        //todo 渲染基本UI结构
+			        function parseChapterData(jsonData){
+			            var jsonObj = JSON.parse(jsonData);
+			            var html = '<h4>' + jsonObj.t + '</h4>';
+			            for(var i = 0 ; i<jsonObj.p.length; i++){
+			                html += '<p>' + jsonObj.p[i] + '</p>';
+			            }
+			            return html;
+			        }
+			        return function(data){
+			            container.html(parseChapterData(data));
+			        }
 			    }
 			    
 			    function EventHanlder(){
@@ -395,12 +542,64 @@
 			            RootContainer.css('font-size',initFontSize);
 			            Util.StorageSetter('font_size',initFontSize);
 			        });
+			        
 			        Win.scroll(function(){
 			            Dom.top_nav.hide();
 			            Dom.bottom_nav.hide();
 			            Dom.font_container.hide();
 			            Dom.font_button.removeClass('font-icon-active');
 			        });
+			        
+			        $('#prev_button').click(function(){
+			            readerModel.prevChapter(function(data){
+			                readerUI(data);
+			            });
+			        });
+			        $('#next_button').click(function(){
+			            readerModel.nextChapter(function(data){
+			                readerUI(data);
+			            });
+			        });
+			        
+			        bkDivs.each(function(i){
+			            $(this).click(function(){
+			                console.log(i);
+			                if($('#night-button .night-type').css('display')=='none'){
+			                    $('#night-button').click();
+			                }
+			                bkDivs.each(function(){
+			                    $(this).children().remove();
+			                });
+			                $(this).append('<div class="bk-container-current"></div>');
+			                var thisColor = $(this).css('background-color');
+			                Body.css('background-color',thisColor);
+			                Util.StorageSetter('background_color',thisColor);
+			                Util.StorageSetter('index',i);
+			            });
+			        });
+			        
+			        $('#night-button').click(function(){
+			            if($('#night-button .day-type').css('display')=='none'){
+			                Body.css({
+			                    'background-color':'#0F1410',
+			                    'color':'#363B37'
+			                });
+			                Util.StorageSetter('type','night-type');
+			            }else{
+			                Body.css({
+			                    'background-color':'#e9dfc7',
+			                    'color':'#555'
+			                });
+			                bkDivs.each(function(){
+			                    $(this).children().remove();
+			                });
+			                bkDivs.eq(1).append('<div class="bk-container-current"></div>');
+			                Util.StorageSetter('type','day-type');
+			                Util.StorageSetter('index','1');
+			            }
+			            $('.day-type,.night-type').toggle();
+			        });
+			        
 			    }
 			    
 			    main();
