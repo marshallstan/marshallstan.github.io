@@ -243,11 +243,26 @@
 		    </div>
 		    <div id="top-nav" class="top-nav" style="display:none">
 		        <div class="icon-back"></div>
-		        <div class="nav-title"><a href="index.html">返回书架</a></div>
+		        <div class="nav-title"><a>返回书架</a></div>
 		    </div>
 		    <div id="fiction_chapter_title"></div>
 		    <div id="fiction_container" class="m-read-content">
-		        
+				<h1>自我评价</h1>
+		        <p>互联网技术是我的兴趣爱好，对技术的执着与追求使我步入这个行业，现已从事前端工作一年多。目前技能列表：</p>
+				<p>1：熟练运用HTML/CSS/JS制作WEB网页及交互特效，熟练运用Jquery/Ajax等框架。 </p>
+				<p>2：运用CSS3制作网页动画； </p>
+				<p>3：JS原生组件开发；</p>
+				<p>4：制作响应式布局网页； </p>
+				<p>5：了解React框架； </p>
+				<p>5：熟悉Photoshop软件；</p>
+				<p>6：熟悉ThinkPHP前端接口；</p>
+				<h1>个人特性：</h1>
+				<p>1：理解能力和学习能力强，能快速掌握新技术的基本使用方法。有强烈的进取心，喜欢钻研新技术；</p>
+				<p>2：良好的沟通能力，具有优秀的团队合作精神； </p>
+				<p>3：性格仔细，执行力强，具有较强的分析和解决问题的能力。 </p>
+				<p>期待能加入贵公司。 </p>
+				<p>谨祝： </p>
+				<p>　 贵公司扬独家之优势，汇天下之精华！</p>
 		    </div>
 		    <div class="m-button-bar">
 		        <ul class="u-tab">
@@ -307,6 +322,9 @@
 		<script src="js/jquery.base64.js"></script>
 		<script src="js/jquery.jsonp.js"></script>
 		<script>
+			window.onload = function(){
+				alert("请使用浏览器调试工具或是移动端查看webapp效果！");
+			};
 			(function(){
 			    'use strict';
 			    var Util = (function(){
@@ -380,11 +398,11 @@
 			    }
 			    function main(){
 			        //todo 入口函数 
-			        readerModel = ReaderModel();
+			        //readerModel = ReaderModel();
 			        readerUI = ReaderBaseFrame(RootContainer);
-			        readerModel.init(function(data){
-			            readerUI(data);
-			        });
+			        //readerModel.init(function(data){
+			        //    readerUI(data);
+			        //});
 			        EventHanlder();
 			    }
 			    
