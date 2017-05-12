@@ -36,7 +36,7 @@ var dataStr = '1、响应式设计<br>\
 <br>\
 6、webapp<br>\
 <br>\
-·webapp版的个人简介<br>\
+·webapp版阅读器<br>\
 ·PS:使用移动端或浏览器的调试工具打开查看效果<br>\
 ';
 var d = dataStr.split('<br><br><br>');
